@@ -1,7 +1,31 @@
 aid: stairwell
+accessModel:
+  pricing: unknown
+  onboarding: self-serve
+  trial: false
+  try_now: false
+  public: false
+  label: Self-serve signup
+  confidence: medium
+  source:
+  - authentication
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/stairwell.png
 name: Stairwell
-description: 'Stairwell is a company surfaced as a portfolio company of accel and added to the API Evangelist
-  network as a stub for enrichment. Sector: security. This profile is a lead awaiting the enrichment pipeline.'
+description: >-
+  Stairwell is a private-by-design threat intelligence and detection platform that
+  gives security teams a continuously reanalyzed, isolated store of their own files
+  as an alternative to crowdsourced public services like VirusTotal. Its products
+  span AI triage and static/behavioral malware analysis, malware variant discovery,
+  Run-to-Ground incident scoping, and an encrypted Private Vault with retroactive
+  detection as threat intelligence evolves. Stairwell exposes a REST API at
+  app.stairwell.com/v1 (bearer-token auth) covering assets and forwarders, objects
+  and detonation, sightings and variants, YARA rule management and ad-hoc scanning,
+  threat reports and IOC correlation, network intelligence (hostname/IP/ASN WHOIS,
+  cloud-provider lookups), plus outbound event-notification webhooks and an official
+  hosted MCP server for read-only agent access. Added to the API Evangelist network
+  from Accel's portfolio and enriched from Stairwell's public developer surface.
 url: https://raw.githubusercontent.com/api-evangelist/stairwell/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,11 +35,33 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
 - Security
-apis: []
+- Threat Intelligence
+- Malware Analysis
+- Cybersecurity
+- Threat Detection
+- YARA
+- Incident Response
+apis:
+- name: Stairwell API
+  description: >-
+    REST API for the Stairwell threat-intelligence platform: manage assets and
+    forwarders, query object metadata/detonation/sightings/variants, manage and
+    scan YARA rules, upload and correlate threat reports and IOCs, run
+    Run-to-Ground analysis, and perform network intelligence lookups. Bearer-token
+    authenticated; gRPC service exposed over HTTP/JSON transcoding.
+  humanURL: https://docs.stairwell.com/reference
+  baseURL: https://app.stairwell.com/v1
+  properties:
+  - type: APIReference
+    url: https://docs.stairwell.com/reference
+  - type: GettingStarted
+    url: https://docs.stairwell.com/docs/api-quickstart
+  - type: Authentication
+    url: authentication/stairwell-authentication.yml
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
@@ -24,3 +70,52 @@ maintainers:
 common:
 - type: Website
   url: https://www.stairwell.com/
+- type: DeveloperPortal
+  url: https://docs.stairwell.com/
+- type: Documentation
+  url: https://docs.stairwell.com/
+- type: APIReference
+  url: https://docs.stairwell.com/reference
+- type: GettingStarted
+  url: https://docs.stairwell.com/docs/api-quickstart
+- type: Blog
+  url: https://stairwell.com/blog/
+- type: Support
+  url: https://docs.stairwell.com/docs/who-to-contact
+- type: Login
+  url: https://app.stairwell.com/login
+- type: TrustCenter
+  url: https://trust.stairwell.com/
+- type: PrivacyPolicy
+  url: https://stairwell.com/privacy-policy/
+- type: TermsOfService
+  url: https://stairwell.com/website-terms-and-conditions/
+- type: LLMsTxt
+  url: llms/stairwell-llms.txt
+- type: MCPServer
+  url: mcp/stairwell-mcp.yml
+- type: Authentication
+  url: authentication/stairwell-authentication.yml
+- type: Webhooks
+  url: asyncapi/stairwell-events-webhooks.yml
+- type: Conventions
+  url: conventions/stairwell-conventions.yml
+- type: Lifecycle
+  url: lifecycle/stairwell-lifecycle.yml
+- type: ErrorCatalog
+  url: errors/stairwell-problem-types.yml
+- type: Conformance
+  url: conformance/stairwell-conformance.yml
+- type: DataModel
+  url: data-model/stairwell-data-model.yml
+- type: WellKnown
+  url: well-known/stairwell-well-known.yml
+- type: DomainSecurity
+  url: security/stairwell-domain-security.yml
+- type: AgentSkill
+  url: skills/_index.yml
+x-enrichment:
+  date: '2026-07-21'
+  status: enriched
+  artifacts_added: 13
+  pass: local-v1

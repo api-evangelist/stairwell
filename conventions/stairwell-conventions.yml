@@ -1,0 +1,55 @@
+generated: '2026-07-21'
+method: searched
+source: https://docs.stairwell.com/docs/api-quickstart.md
+docs:
+  - https://docs.stairwell.com/reference
+  - https://docs.stairwell.com/docs/common-expression-language-cel
+  - https://docs.stairwell.com/docs/cel-query-language
+base_url: https://app.stairwell.com/v1
+authentication:
+  style: bearer
+  header: 'Authorization: Bearer <API token>'
+  ref: authentication/stairwell-authentication.yml
+resource_naming:
+  style: google-aip-resource-names
+  description: >-
+    Resources are addressed by hierarchical resource names (e.g.
+    environments/{env}/assets/{asset}, tags identified by resource name). The API
+    is a gRPC service exposed over HTTP/JSON transcoding (evident from signed-URL
+    fallbacks tied to "gRPC's default message size limit").
+pagination:
+  style: page-token
+  description: >-
+    List endpoints (ListObjectMetadata, ListAssets, ListYaraRules, etc.) return
+    paginated results. Follows Google AIP-158 style page_size / page_token /
+    next_page_token cursor pagination.
+  request_params: [page_size, page_token]
+  response_fields: [next_page_token]
+filtering:
+  style: cel
+  description: >-
+    Object listing accepts a CEL (Common Expression Language) filter expression
+    plus StairQL for querying the historical object corpus.
+  docs: https://docs.stairwell.com/docs/common-expression-language-cel
+idempotency:
+  supported: false
+  note: >-
+    No idempotency-key header/parameter is documented. Create operations for
+    tags/comments/opinions are effectively idempotent by resource name but the
+    provider does not publish an idempotency contract.
+async_operations:
+  description: >-
+    Long-running work is poll-based: TriggerObjectDetonation returns immediately
+    with a pending status and the caller polls GetObjectDetonation; forwarder
+    upgrades (UpgradeGroupMembers) are asynchronous and return immediately.
+downloads:
+  description: >-
+    DownloadObject returns files under 4 MB inline and a redirect URL for larger
+    files; DownloadObjectV2 always returns a temporary signed URL.
+versioning:
+  scheme: uri-path
+  current: v1
+  ref: lifecycle/stairwell-lifecycle.yml
+errors:
+  envelope: google.rpc.Status
+  ref: errors/stairwell-problem-types.yml

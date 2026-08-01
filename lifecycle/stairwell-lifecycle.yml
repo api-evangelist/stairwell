@@ -1,0 +1,23 @@
+generated: '2026-07-21'
+method: searched
+source: https://docs.stairwell.com/reference
+versioning:
+  scheme: uri-path
+  current: v1
+  base_url: https://app.stairwell.com/v1
+  notes: >-
+    A v2 exists for select operations (e.g. DownloadObjectV2) introduced
+    alongside v1 rather than as a global version bump; the API surface is v1.
+deprecation:
+  policy_url: null
+  sunset_header: null
+  notes: No public deprecation policy or RFC 8594 Sunset/Deprecation header support documented.
+sla:
+  url: null
+status_page: null
+trust_center: https://trust.stairwell.com/
+notes: >-
+  Stairwell publishes a Trust Center at https://trust.stairwell.com/ but does not
+  publish a public API status page, uptime SLA, versioning policy page, or
+  deprecation policy. Only versioning could be established (uri-path v1).
+deprecated_operations: []

@@ -1,0 +1,43 @@
+generated: '2026-07-21'
+method: searched
+spec_type: Webhooks
+source: https://docs.stairwell.com/docs/generic-siem-soar-webhook.md
+direction: outbound
+description: >-
+  Stairwell delivers Event Notifications as outbound webhooks: it POSTs JSON to a
+  subscriber-supplied URI each time a matching detection event occurs in an
+  environment. Configured per-environment under Settings > Environments >
+  (environment) > Event Notifications. Also consumable via native integrations
+  (Splunk, Google SecOps, Tines, TheHive, generic SIEM/SOAR).
+transport:
+  protocol: https
+  method: POST
+  content_type: application/json
+events:
+  - type: av_scan_match
+    description: An object was flagged by one or more antivirus engines.
+    payload_fields:
+      - hashes (sha256, sha1, md5)
+      - file_size
+      - ui_link
+      - environment
+      - av_scan_results   # engine names + threat status
+  - type: yara_rule_match
+    description: A file matching an existing YARA rule was observed on an asset or uploaded by a user.
+    payload_fields:
+      - hashes (sha256, sha1, md5)
+      - file_size
+      - ui_link
+      - environment
+      - rule_metadata     # rule name + rule environment details
+      - asset_hostname
+      - file_location
+configuration:
+  path: Settings > Environments > (gear) > Event Notifications > Add New Integration
+  activation: immediate
+testing:
+  tools: [webhook.site, netcat]
+  method: Upload a test file to verify JSON payload delivery before switching to a production endpoint.
+notes: >-
+  Stairwell does not publish a machine-readable AsyncAPI document; this artifact
+  captures the documented webhook event catalog. Emitted as type Webhooks.

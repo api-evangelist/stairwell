@@ -1,0 +1,206 @@
+# Stairwell Documentation
+
+> Documentation for Stairwell
+
+## Guides
+- [What is Stairwell?](https://docs.stairwell.com/docs/what-is-stairwell.md)
+- [Onboarding Overview](https://docs.stairwell.com/docs/onboarding-overview.md)
+- [Core Concepts](https://docs.stairwell.com/docs/core-concepts.md)
+- [Quick Start: Deploy a Forwarder](https://docs.stairwell.com/docs/deploy-your-first-forwarder.md)
+- [Quick Start: Your First Hunt](https://docs.stairwell.com/docs/your-first-hunt.md)
+- [Quick Start: API Access](https://docs.stairwell.com/docs/api-quickstart.md)
+- [AI Triage](https://docs.stairwell.com/docs/ai-triage.md)
+- [Opinions](https://docs.stairwell.com/docs/opinions.md)
+- [Variants & Sightings](https://docs.stairwell.com/docs/variants-and-sightings.md)
+- [CEL Query Language](https://docs.stairwell.com/docs/cel-query-language.md)
+- [StairQL - A New Way to Query](https://docs.stairwell.com/docs/stairql.md)
+- [IOC Simple Search](https://docs.stairwell.com/docs/ioc-simple-search.md)
+- [Example Queries](https://docs.stairwell.com/docs/example-queries.md)
+- [Bulk Search](https://docs.stairwell.com/docs/bulk-search.md)
+- [Run-to-Ground Overview](https://docs.stairwell.com/docs/run-to-ground.md)
+- [Work with Threat Reports](https://docs.stairwell.com/docs/work-with-threat-reports.md)
+- [Share Threat Reports](https://docs.stairwell.com/docs/share-threat-reports.md)
+- [Manage YARA Rules](https://docs.stairwell.com/docs/manage-yara-rules.md)
+- [Best Practices](https://docs.stairwell.com/docs/yara-rule-best-practices.md)
+- [Rule Feeds](https://docs.stairwell.com/docs/yara-rule-feeds.md)
+- [CrowdStrike](https://docs.stairwell.com/docs/crowdstrike.md)
+- [Splunk](https://docs.stairwell.com/docs/splunk.md)
+- [SentinelOne](https://docs.stairwell.com/docs/sentinelone.md)
+- [Tines](https://docs.stairwell.com/docs/tines.md)
+- [TheHive](https://docs.stairwell.com/docs/thehive.md)
+- [Browser Extension](https://docs.stairwell.com/docs/browser-extension.md)
+- [MCP Server](https://docs.stairwell.com/docs/mcp-server.md)
+- [Google SecOps](https://docs.stairwell.com/docs/google-secops.md)
+- [Generic SIEM/SOAR (Webhook)](https://docs.stairwell.com/docs/generic-siem-soar-webhook.md)
+- [Asset Registration](https://docs.stairwell.com/docs/registration.md)
+- [Asset Identifiers](https://docs.stairwell.com/docs/asset-identifiers.md)
+- [Archive Inactive Assets](https://docs.stairwell.com/docs/archive-inactive-assets.md)
+- [Sleep & Wake Forwarders](https://docs.stairwell.com/docs/sleep-and-wake-forwarders.md)
+- [Connectivity Requirements](https://docs.stairwell.com/docs/connectivity-requirements.md)
+- [Recommended Exclusions](https://docs.stairwell.com/docs/recommended-exclusions.md)
+- [Forwarder Performance Tuning](https://docs.stairwell.com/docs/performance-tuning.md)
+- [Handle Multiple Installations](https://docs.stairwell.com/docs/handle-multiple-installations.md)
+- [Install (Manual)](https://docs.stairwell.com/docs/install-windows-manually.md)
+- [Install (Intune)](https://docs.stairwell.com/docs/install-windows-with-intune.md)
+- [Install (SCCM)](https://docs.stairwell.com/docs/install-windows-with-sccm.md)
+- [Install (Tanium)](https://docs.stairwell.com/docs/install-windows-with-tanium.md)
+- [Install (SentinelOne RSO)](https://docs.stairwell.com/docs/install-windows-with-s1rso.md)
+- [Uninstall Forwarder](https://docs.stairwell.com/docs/uninstall-windows-forwarder.md)
+- [Update Forwarder](https://docs.stairwell.com/docs/update-windows-forwarder.md)
+- [Antivirus Exclusions](https://docs.stairwell.com/docs/antivirus-exclusions-windows.md)
+- [Windows Install Parameters](https://docs.stairwell.com/docs/windows-install-parameters.md)
+- [Install (Manual)](https://docs.stairwell.com/docs/install-mac-manually.md)
+- [Install (JAMF)](https://docs.stairwell.com/docs/install-mac-with-jamf.md)
+- [Install (Kandji)](https://docs.stairwell.com/docs/install-mac-with-kandji.md)
+- [Install (Generic MDM)](https://docs.stairwell.com/docs/install-mac-with-mdm.md)
+- [Uninstall Forwarder](https://docs.stairwell.com/docs/uninstall-mac-forwarder.md)
+- [Update Forwarder](https://docs.stairwell.com/docs/update-mac-forwarder.md)
+- [Anti-Tamper Protection](https://docs.stairwell.com/docs/anti-tamper-macos.md)
+- [Install (APT)](https://docs.stairwell.com/docs/install-apt.md)
+- [Install (Manual)](https://docs.stairwell.com/docs/install-linux-forwarder-manually.md)
+- [Install (Script)](https://docs.stairwell.com/docs/install-linux-forwarder.md)
+- [Uninstall Forwarder](https://docs.stairwell.com/docs/uninstall-linux-forwarder.md)
+- [Upgrade Forwarder](https://docs.stairwell.com/docs/upgrade-linux-forwarder.md)
+- [Install the Linux Forwarder in Sleep Mode](https://docs.stairwell.com/docs/linux-install-sleep.md)
+- [What to Check First](https://docs.stairwell.com/docs/what-to-check-first.md)
+- [Proxy Support](https://docs.stairwell.com/docs/proxy-support.md)
+- [Change Logging Level](https://docs.stairwell.com/docs/logging-level.md)
+- [Force or Skip a Backscan](https://docs.stairwell.com/docs/force-skip-backscan.md)
+- [Windows Forwarder Troubleshooting](https://docs.stairwell.com/docs/windows-troubleshooting.md)
+- [macOS Forwarder Troubleshooting](https://docs.stairwell.com/docs/macos-troubleshooting.md)
+- [Linux Forwarder Troubleshooting](https://docs.stairwell.com/docs/linux-troubleshooting.md)
+- [Policies Overview](https://docs.stairwell.com/docs/policies-overview.md)
+- [Manage Groups](https://docs.stairwell.com/docs/manage-groups.md)
+- [Create & Edit Policies](https://docs.stairwell.com/docs/create-edit-policies.md)
+- [Asset Configuration](https://docs.stairwell.com/docs/asset-configuration.md)
+- [Exclusions](https://docs.stairwell.com/docs/exclusions.md)
+- [Intake Filters](https://docs.stairwell.com/docs/intake-filters.md)
+- [Introduction to Swell CLI](https://docs.stairwell.com/docs/swell-introduction.md)
+- [Install on Linux](https://docs.stairwell.com/docs/install-swell-linux.md)
+- [Install on Linux Appliance](https://docs.stairwell.com/docs/install-swell-linux-appliance.md)
+- [Install on macOS](https://docs.stairwell.com/docs/install-swell-mac.md)
+- [Install on Windows](https://docs.stairwell.com/docs/install-swell-windows.md)
+- [User Roles & Types](https://docs.stairwell.com/docs/user-roles.md)
+- [Create & Revoke Auth Tokens](https://docs.stairwell.com/docs/create-revoke-auth-tokens.md)
+- [What Auth Tokens Can Access](https://docs.stairwell.com/docs/api-token-scope.md)
+- [Manage Environments](https://docs.stairwell.com/docs/manage-environments.md)
+- [Multi-Tenancy & Organizations](https://docs.stairwell.com/docs/multi-tenancy.md)
+- [Event Notifications](https://docs.stairwell.com/docs/event-notifications.md)
+- [Configure SSO](https://docs.stairwell.com/docs/configure-sso.md)
+- [Reset SSO Settings](https://docs.stairwell.com/docs/reset-sso.md)
+- [Supported Identity Providers](https://docs.stairwell.com/docs/supported-idps.md)
+- [Stairwell File Forwarder](https://docs.stairwell.com/docs/forwarder-downloads.md)
+- [Windows v1.7.9](https://docs.stairwell.com/docs/windows-v179.md)
+- [Windows v1.7.8](https://docs.stairwell.com/docs/windows-forwarder-v178.md)
+- [Windows v1.7.6](https://docs.stairwell.com/docs/windows-forwarder-v176.md)
+- [Windows v1.7.4](https://docs.stairwell.com/docs/windows-forwarder-v174.md)
+- [Windows v1.7.2](https://docs.stairwell.com/docs/windows-forwarder-v172.md)
+- [Linux v2.5.1](https://docs.stairwell.com/docs/linux-v251.md)
+- [Linux v2.5.0](https://docs.stairwell.com/docs/linux-v250.md)
+- [Linux v2.4.6](https://docs.stairwell.com/docs/linux-forwarder-v246.md)
+- [Linux v2.4.5](https://docs.stairwell.com/docs/linux-forwarder-v245.md)
+- [Linux v2.4.3](https://docs.stairwell.com/docs/linux-forwarder-v243.md)
+- [macOS v1.7.0](https://docs.stairwell.com/docs/mac-forwarder-v170.md)
+- [macOS v1.6.12](https://docs.stairwell.com/docs/mac-forwarder-v1612.md)
+- [macOS v1.6.10](https://docs.stairwell.com/docs/mac-forwarder-v1610.md)
+- [Who to Contact for Support](https://docs.stairwell.com/docs/who-to-contact.md)
+- [Forwarder Deployment Checklist](https://docs.stairwell.com/docs/forwarder-deploy-checklist.md)
+- [How Stairwell Differs from VirusTotal](https://docs.stairwell.com/docs/stairwell-vs-virustotal.md)
+- [Asset Deployment Strategy](https://docs.stairwell.com/docs/asset-deployment-strategy.md)
+- [Timezone Reference](https://docs.stairwell.com/docs/timezone-reference.md)
+- [File Size & Processing Limits](https://docs.stairwell.com/docs/file-size-limits.md)
+- [Stairwell Platform Access Policy](https://docs.stairwell.com/docs/platform-access.md)
+- [Managing False Positives and Alert Fatigue](https://docs.stairwell.com/docs/managing-false-positives.md)
+- [Rapid IOC Sweep for Newly Disclosed Threats](https://docs.stairwell.com/docs/rapid-ioc-sweep-for-newly-disclosed-threats.md)
+- [Secure your Software Development Pipeline](https://docs.stairwell.com/docs/secure-your-software-development-pipeline.md)
+- [Executive Exposure Assessment](https://docs.stairwell.com/docs/executive-exposure-assessment.md)
+- [Investigating Suspicious Domains](https://docs.stairwell.com/docs/investigating-suspicious-domains.md)
+
+## API Reference
+- [GetAsset](https://docs.stairwell.com/reference/assets_getasset.md): Retrieves metadata for an asset.
+- [ListAssetTags](https://docs.stairwell.com/reference/assets_listtags.md): Lists tags applied to an asset.
+- [CreateAssetTag](https://docs.stairwell.com/reference/assets_createtag.md): Applies a tag to an asset.
+- [GetAssetTag](https://docs.stairwell.com/reference/assets_gettag.md): Retrieves a specific tag by resource name.
+- [DeleteAssetTag](https://docs.stairwell.com/reference/assets_deletetag.md): Removes a tag from an asset.
+- [ListAssets](https://docs.stairwell.com/reference/assets_listassets.md): Lists assets in an environment.
+- [CreateAsset](https://docs.stairwell.com/reference/assets_createasset.md): Creates an asset in an environment.
+- [ArchiveAsset](https://docs.stairwell.com/reference/assets_archiveasset.md): Archives an asset. This means it will be excluded from queries, and not count towards the  asset cap.
+- [SleepAsset](https://docs.stairwell.com/reference/assets_sleepasset.md): Sends a sleep action to a forwarder, causing it to cease file collection.
+- [WakeAsset](https://docs.stairwell.com/reference/assets_wakeasset.md): Sends a wake action to a forwarder, causing it to resume file collection  after being put to sleep by SleepAsset.
+- [ListGroups](https://docs.stairwell.com/reference/groups_listgroups.md): Lists all groups in an environment.
+- [GetGroup](https://docs.stairwell.com/reference/groups_getgroup.md): Gets a group and its member assets.
+- [ModifyGroupMembership](https://docs.stairwell.com/reference/groups_modifygroupmembership.md): Adds or removes assets from a static group. Fails for dynamic groups  since their membership is computed from rules.
+- [UpgradeGroupMembers](https://docs.stairwell.com/reference/groups_upgradegroupmembers.md): Triggers a forwarder upgrade for Windows and macOS assets in a group.  Linux assets cannot be upgraded via this API and must be updated through  your package manager. The upgrade is asynchronous - this call submits  the request and returns immediately.
+- [ListHostnameComments](https://docs.stairwell.com/reference/hostnames_listcomments.md): Lists user comments attached to a hostname.
+- [CreateHostnameComment](https://docs.stairwell.com/reference/hostnames_createcomment.md): Adds a comment to a hostname.
+- [GetHostnameMetadata](https://docs.stairwell.com/reference/hostnames_gethostnamemetadata.md): Retrieves metadata for a hostname, including DNS resolution history.
+- [ListHostnameOpinions](https://docs.stairwell.com/reference/hostnames_listopinions.md): Lists analyst opinions (verdict classifications) for a hostname.
+- [CreateHostnameOpinion](https://docs.stairwell.com/reference/hostnames_createopinion.md): Submits an analyst opinion (verdict classification) for a hostname.
+- [ListHostnameTags](https://docs.stairwell.com/reference/hostnames_listtags.md): Lists tags applied to a hostname.
+- [CreateHostnameTag](https://docs.stairwell.com/reference/hostnames_createtag.md): Applies a tag to a hostname.
+- [GetHostnameTag](https://docs.stairwell.com/reference/hostnames_gettag.md): Retrieves a specific tag by resource name.
+- [DeleteHostnameTag](https://docs.stairwell.com/reference/hostnames_deletetag.md): Removes a tag from a hostname.
+- [ListIpAddressComments](https://docs.stairwell.com/reference/ipaddresses_listcomments.md): Lists user comments attached to an IP address.
+- [CreateIpAddressComment](https://docs.stairwell.com/reference/ipaddresses_createcomment.md): Adds a comment to an IP address.
+- [GetIpAddressMetadata](https://docs.stairwell.com/reference/ipaddresses_getipaddressmetadata.md): Retrieves metadata for an IP address.
+- [ListIpAddressOpinions](https://docs.stairwell.com/reference/ipaddresses_listopinions.md): Lists analyst opinions (verdict classifications) for an IP address.
+- [CreateIpAddressOpinion](https://docs.stairwell.com/reference/ipaddresses_createopinion.md): Submits an analyst opinion (verdict classification) for an IP address.
+- [ListIpAddressTags](https://docs.stairwell.com/reference/ipaddresses_listtags.md): Lists tags applied to an IP address.
+- [CreateIpAddressTag](https://docs.stairwell.com/reference/ipaddresses_createtag.md): Applies a tag to an IP address.
+- [GetIpAddressTag](https://docs.stairwell.com/reference/ipaddresses_gettag.md): Retrieves a specific tag by resource name.
+- [DeleteIpAddressTag](https://docs.stairwell.com/reference/ipaddresses_deletetag.md): Removes a tag from an IP address.
+- [GenerateRunToGround](https://docs.stairwell.com/reference/objects_generateruntoground.md): Generates Run To Ground (RTG) analysis for incident scoping. Finds all  variants of specified objects and traces their presence across assets.
+- [ListObjectMetadata](https://docs.stairwell.com/reference/objects_listobjectmetadata.md): Lists objects matching a CEL filter expression. Returns paginated metadata  for each matching object.  See https://docs.stairwell.com/docs/common-expression-language-cel
+- [ListObjectComments](https://docs.stairwell.com/reference/objects_listcomments.md): Lists user comments attached to an object.
+- [CreateObjectComment](https://docs.stairwell.com/reference/objects_createcomment.md): Adds a comment to an object.
+- [GetObjectDetonation](https://docs.stairwell.com/reference/objects_getobjectdetonation.md): Retrieves sandbox detonation results for an object, including behavioral  artifacts, MITRE ATT&CK TTPs, and dropped files.
+- [TriggerObjectDetonation](https://docs.stairwell.com/reference/objects_triggerobjectdetonation.md): Submits an object for sandbox detonation. Returns immediately with a  pending status; poll GetObjectDetonation to retrieve results.
+- [GetObjectMetadata](https://docs.stairwell.com/reference/objects_getobjectmetadata.md): Retrieves analysis metadata for an object, including hashes, MalEval  verdict, network indicators, and YARA matches.
+- [ListObjectOpinions](https://docs.stairwell.com/reference/objects_listopinions.md): Lists analyst opinions (verdict classifications) for an object.
+- [CreateObjectOpinion](https://docs.stairwell.com/reference/objects_createopinion.md): Submits an analyst opinion (verdict classification) for an object.
+- [ListObjectRelationships](https://docs.stairwell.com/reference/objects_listobjectrelationships.md): Lists parent/child relationships for an object. Parents are containers  (archives, packed files) from which the object was extracted. Children  are files extracted from this object.
+- [ListObjectSightings](https://docs.stairwell.com/reference/objects_listobjectsightings.md): Lists sightings of an object across assets in your environments.  Each sighting includes the asset, timestamp, and file path. Does not  include synthetic sightings from unpacked or extracted files.
+- [ListObjectTags](https://docs.stairwell.com/reference/objects_listtags.md): Lists tags applied to an object.
+- [CreateObjectTag](https://docs.stairwell.com/reference/objects_createtag.md): Applies a tag to an object.
+- [GetObjectTag](https://docs.stairwell.com/reference/objects_gettag.md): Retrieves a specific tag by resource name.
+- [DeleteObjectTag](https://docs.stairwell.com/reference/objects_deletetag.md): Removes a tag from an object.
+- [ListObjectVariants](https://docs.stairwell.com/reference/objects_listobjectvariants.md): Lists structural variants of an object. Variants are files that share  similar code structure, identified via TLSH and imphash similarity.
+- [DownloadObject](https://docs.stairwell.com/reference/objects_downloadobject.md): Downloads an object directly in the response body. Files under 4 MB are  returned inline; larger files return a redirect URL due to gRPC's default  message size limit.
+- [DownloadObjectV2](https://docs.stairwell.com/reference/objects_downloadobjectv2.md): Downloads an object via a temporary signed URL. Works for any file size  but has higher latency than DownloadObject. Use this when you need a  stable download URL or when DownloadObject returns a redirect.
+- [CreateThreatReport](https://docs.stairwell.com/reference/threatreports_createthreatreport.md): Uploads a threat report to extract and correlate its IOCs.
+- [DeleteThreatReport](https://docs.stairwell.com/reference/threatreports_deletethreatreport.md): Deletes a threat report and removes its IOC correlations.
+- [ListThreatReportIocs](https://docs.stairwell.com/reference/threatreports_listthreatreportiocs.md): Lists all indicators of compromise (IOCs) extracted from a threat report.  Use this to review what the report covers or to export IOCs for other tools.
+- [QueryThreatReportsMatchingIOCs](https://docs.stairwell.com/reference/threatreports_querythreatreportsmatchingiocs.md): Query threat reports matching IOCs. Takes a set of IOCs (hashes,  hostnames, IPs, YARA rules) and returns which threat reports reference  them, along with metadata about those reports.
+- [ListThreatReportMatches](https://docs.stairwell.com/reference/threatreports_listthreatreportmatches.md): Lists files in your environment that match a threat report's IOCs.  Returns full object metadata for each matching file, enabling you to  investigate which systems are affected by a particular threat.
+- [ListTriggerMatches](https://docs.stairwell.com/reference/triggersservice_listtriggermatches.md): Lists trigger matches (alerts from YARA scans, MalEval verdicts, or threat  intel) for an environment. Supports optional time range filtering; if  omitted, returns recent matches.
+- [ListYaraRules](https://docs.stairwell.com/reference/yararules_listyararules.md): Lists YARA rules in an environment.
+- [CreateYaraRule](https://docs.stairwell.com/reference/yararules_createyararule.md): Creates a YARA rule in an environment.
+- [GetYaraRule](https://docs.stairwell.com/reference/yararules_getyararule.md): Retrieves a YARA rule and its metadata.
+- [DeleteYaraRule](https://docs.stairwell.com/reference/yararules_deleteyararule.md): Deletes a YARA rule.
+- [UpdateYaraRule](https://docs.stairwell.com/reference/yararules_updateyararule.md): Updates a YARA rule's definition or state.
+- [QueryYaraRuleMatches](https://docs.stairwell.com/reference/yararules_queryyararulematches.md): Lists objects that match a YARA rule.
+- [ListYaraRuleTags](https://docs.stairwell.com/reference/yararules_listtags.md): Lists tags applied to a YARA rule.
+- [CreateYaraRuleTag](https://docs.stairwell.com/reference/yararules_createtag.md): Applies a tag to a YARA rule.
+- [GetYaraRuleTag](https://docs.stairwell.com/reference/yararules_gettag.md): Retrieves a specific tag by resource name.
+- [DeleteYaraRuleTag](https://docs.stairwell.com/reference/yararules_deletetag.md): Removes a tag from a YARA rule.
+- [ScanYaraRule](https://docs.stairwell.com/reference/yararules_scanyararule.md): Runs an ad-hoc YARA rule against the historical object corpus and  returns the matches. Combines two discovery paths automatically:  candidate-file lookup using Stairwell's partial binary indexes,  and variant discovery for any SHA256/SHA1/MD5 literals named in  the rule body. Results are returned synchronously when the scan  finishes or when max_matches is reached.   The scan's environment scope is controlled by the request's  environments field — an empty list means "every environment the  caller can read." The rule is NOT persisted; use CreateYaraRule  for that. This endpoint is for quick evaluation of a rule body  against history.
+- [SummarizeFile](https://docs.stairwell.com/reference/aifiletriage_summarizefile.md): SummarizeFile analyzes the file and returns a summary produced by AI models
+- [File Intake API](https://docs.stairwell.com/reference/intakeapi.md): This page will help you get started with Intake API.
+- [Network Intelligence APIs](https://docs.stairwell.com/reference/network-intelligence-apis.md)
+- [GetASNWhois](https://docs.stairwell.com/reference/asn_getasnwhois-1.md): GetASNWhois finds ASN records by ASN number
+- [GetHostname](https://docs.stairwell.com/reference/hostname_gethostname-1.md): GetHostname retrieves a specific hostname entity with DNS resolution data
+- [GetHostnameResolutions](https://docs.stairwell.com/reference/hostname_gethostnameresolutions-1.md): GetHostnameResolutions returns all addresses resolved to by a given hostname over a specified  range, including observation details such as first/last seen time, observation count, etc.  This includes all DNS record types (A, AAAA, MX).   Query parameters:    - types: Comma-separated DNS record types to filter by (e.g., "A,AAAA")      If not specified, returns all types.
+- [CheckHostnameWhitelistStatus](https://docs.stairwell.com/reference/hostname_checkhostnamewhiteliststatus.md): CheckHostnameWhitelistStatus checks whether a hostname is on Stairwell's managed hostname  whitelist. Lookups check exact hostname, eTLD+1, and wildcards with strict precedence.
+- [BatchCheckHostnameWhitelistStatus](https://docs.stairwell.com/reference/hostname_batchcheckhostnamewhiteliststatus.md): BatchCheckHostnameWhitelistStatus checks Stairwell's managed hostname whitelist status  for multiple hostnames (max 100).
+- [BatchGetHostnameResolutions](https://docs.stairwell.com/reference/hostname_batchgethostnameresolutions-1.md): BatchGetHostnameResolutions is the bulk version of GetHostnameResolutions, returning resolution  summaries for multiple hostnames.
+- [GetIPAddress](https://docs.stairwell.com/reference/ipaddress_getipaddress-1.md): GetIPAddress retrieves a specific IP address entity with enrichment data
+- [GetHostnamesResolvingToIP](https://docs.stairwell.com/reference/ipaddress_gethostnamesresolvingtoip-1.md): GetHostnamesResolvingToIP returns all hostnames, alongside summary information such as  eTLD+1 resolved to by the provided IP over the given time interval.   Query parameters:    - filter: Wildcard pattern to filter hostnames (e.g., "*.google.com")      Supports: *.example.com (prefix), example.* (suffix), *example* (contains)
+- [LookupCloudProvider](https://docs.stairwell.com/reference/ipaddress_lookupcloudprovider-1.md): LookupCloudProvider checks if an IP address belongs to a known cloud provider
+- [GetIPAddressWhois](https://docs.stairwell.com/reference/ipaddress_getipaddresswhois-1.md): GetIPAddressWhois finds the most specific network containing the given IP address
+- [GetCloudIPRanges](https://docs.stairwell.com/reference/utilities_getcloudipranges-1.md): GetCloudIPRanges returns the IP ranges for cloud providers
+- [BatchCanonicalizeHostnames](https://docs.stairwell.com/reference/utilities_batchcanonicalizehostnames-1.md): BatchCanonicalizeHostnames performs hostname normalization on a batch of hostnames in bulk.  Processing continues even if an invalid hostname is encountered, each provided hostname will  either have a value in the response's "canonical" or "errors" map.
+- [BatchComputeETLDPlusOne](https://docs.stairwell.com/reference/utilities_batchcomputeetldplusone-1.md): BatchComputeETLDPlusOne performs bulk eTLD+1 computation for up to 1000 hostnames.  Processing continues even if some hostnames are invalid.
+- [CanonicalizeHostname](https://docs.stairwell.com/reference/utilities_canonicalizehostname-1.md): CanonicalizeHostname performs basic normalization (strip whitespace and leading or trailing  dots, map to lowercase), uses punycode to convert internationalized labels to ASCII, and  performs RFC1035 validation on the resulting hostname.
+- [ComputeETLDPlusOne](https://docs.stairwell.com/reference/utilities_computeetldplusone-1.md): ComputeETLDPlusOne computes the registrable domain (eTLD+1) for a given hostname.  Examples: "www.google.com" -> "google.com", "mail.google.co.uk" -> "google.co.uk"
+- [BatchCanonicalizeURLs](https://docs.stairwell.com/reference/utilities_batchcanonicalizeurls-1.md): BatchCanonicalizeURLs performs URL canonicalization on a batch of URLs in bulk (up to 1000 URLs).  Processing will continue even if an invalid URL is encountered. Each provided URL will either  have a value in the response's "canonical" or "errors" map.
+- [CanonicalizeURL](https://docs.stairwell.com/reference/utilities_canonicalizeurl-1.md): CanonicalizeURL converts a URL to a consistent, comparable form for deduplication and storage.  Canonicalization includes: lowercasing scheme and host, normalizing path, sorting query parameters,  removing fragments, removing default ports, and decoding unnecessary percent-encoding.

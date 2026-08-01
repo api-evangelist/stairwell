@@ -1,0 +1,33 @@
+generated: '2026-07-21'
+method: searched
+source: https://docs.stairwell.com/docs/api-quickstart.md
+docs: https://docs.stairwell.com/docs/api-token-scope.md
+summary:
+  types: [http]
+  scheme: bearer
+  token_style: opaque-api-token
+  oauth2_flows: []
+  api_key_in: []
+schemes:
+  - name: bearerAuth
+    type: http
+    scheme: bearer
+    header: Authorization
+    format: 'Authorization: Bearer YOUR_API_TOKEN'
+    sources: [https://docs.stairwell.com/docs/api-quickstart.md]
+    description: >-
+      Stairwell API and CLI tokens are long-lived opaque bearer tokens minted in
+      the web app under Settings > Auth tokens (Organization), token type
+      "API/CLI". The token is shown only once at creation. All requests to
+      https://app.stairwell.com/v1 carry it in the Authorization header.
+access_model:
+  description: >-
+    A token grants access corresponding to its creation level. For MSSP
+    parent/child (multi-tenant) relationships, a token created at the parent
+    level is granted access to all child environments and shared environments
+    including global objects. There are no named OAuth scopes; access is scoped
+    by environment hierarchy and the creating principal's role.
+  source: https://docs.stairwell.com/docs/api-token-scope.md
+guidance:
+  - Treat the API token like a password; do not commit tokens to source control.
+  - Revoke compromised tokens immediately from Settings > Auth tokens.

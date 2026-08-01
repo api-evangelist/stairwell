@@ -1,0 +1,69 @@
+generated: '2026-07-21'
+method: derived
+source: https://docs.stairwell.com/reference
+description: >-
+  Entity-relationship graph derived from the documented Stairwell v1 API resource
+  surface. Resources use hierarchical (Google AIP) resource names rooted at an
+  Environment.
+entities:
+  - name: Environment
+    description: Tenant/workspace boundary; assets, objects, rules and reports are scoped to it. Supports multi-tenant parent/child (MSSP).
+  - name: Asset
+    description: A monitored endpoint running a forwarder; can be archived, slept/woken, grouped, and tagged.
+  - name: Group
+    description: Static or dynamic collection of assets; membership modifiable for static groups.
+  - name: Object
+    description: A file/binary under analysis; has hashes, MalEval verdict, YARA matches, sightings, variants, relationships, opinions, tags, and detonation results.
+  - name: Detonation
+    description: Sandbox behavioral analysis of an object (MITRE ATT&CK TTPs, dropped files).
+  - name: YaraRule
+    description: Detection rule; can be created, scanned ad-hoc, matched, and tagged.
+  - name: ThreatReport
+    description: Uploaded report whose IOCs are extracted and correlated against the corpus.
+  - name: Hostname
+    description: Network intelligence entity with DNS resolution history, comments, opinions, tags.
+  - name: IpAddress
+    description: Network intelligence entity with enrichment/WHOIS/cloud-provider data, comments, opinions, tags.
+  - name: Tag
+    description: Label applied to assets, objects, hostnames, IPs, or YARA rules.
+  - name: Opinion
+    description: Analyst verdict classification on an object, hostname, or IP.
+relationships:
+  - from: Environment
+    to: Asset
+    type: has_many
+    via: environment
+  - from: Group
+    to: Asset
+    type: has_many
+    via: membership
+  - from: Object
+    to: Object
+    type: has_many
+    via: relationships   # parent containers / extracted children
+  - from: Object
+    to: Object
+    type: has_many
+    via: variants        # TLSH/imphash structural variants
+  - from: Object
+    to: Sighting
+    type: has_many
+    via: sightings       # object seen on assets
+  - from: Object
+    to: Detonation
+    type: has_one
+    via: detonation
+  - from: ThreatReport
+    to: IOC
+    type: has_many
+    via: iocs
+  - from: YaraRule
+    to: Object
+    type: has_many
+    via: matches
+  - from: Hostname
+    to: IpAddress
+    type: has_many
+    via: resolutions
+tags_polymorphic_on: [Asset, Object, Hostname, IpAddress, YaraRule]
+opinions_polymorphic_on: [Object, Hostname, IpAddress]

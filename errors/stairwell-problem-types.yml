@@ -1,0 +1,41 @@
+generated: '2026-07-21'
+method: derived
+source: https://docs.stairwell.com/reference
+format: google.rpc.Status
+envelope:
+  description: >-
+    Stairwell is a gRPC service exposed over HTTP/JSON transcoding, so errors
+    follow the Google API canonical error model (google.rpc.Status): a JSON body
+    with `code` (numeric gRPC status), `message`, and optional `details[]`,
+    mapped to standard HTTP status codes. No RFC 9457 problem+json envelope is
+    published. Types below are derived from the documented operation behavior;
+    verify against live responses.
+problems:
+  - status: 400
+    grpc: INVALID_ARGUMENT
+    title: Invalid argument
+    remediation: Malformed request, invalid CEL/StairQL filter, or bad resource name.
+  - status: 401
+    grpc: UNAUTHENTICATED
+    title: Missing or invalid API token
+    remediation: 'Supply a valid Authorization: Bearer <token>; the token may be revoked or expired.'
+  - status: 403
+    grpc: PERMISSION_DENIED
+    title: Token lacks access to the requested environment
+    remediation: Use a token created at an environment level that includes the target resource.
+  - status: 404
+    grpc: NOT_FOUND
+    title: Resource not found
+    remediation: The asset/object/hostname/IP/YARA rule/threat report resource name does not exist or is out of scope.
+  - status: 429
+    grpc: RESOURCE_EXHAUSTED
+    title: Rate limit or quota exceeded
+    remediation: Back off and retry; batch endpoints cap inputs (e.g. 100 hostnames, 1000 URLs).
+  - status: 500
+    grpc: INTERNAL
+    title: Internal error
+    remediation: Retry with backoff; contact support if persistent.
+notes: >-
+  Batch/utility endpoints (BatchCheckHostnameWhitelistStatus,
+  BatchCanonicalizeHostnames, BatchCanonicalizeURLs) return per-item results with
+  a "canonical" value or an "errors" map rather than failing the whole request.

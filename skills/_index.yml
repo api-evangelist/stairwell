@@ -1,0 +1,16 @@
+generated: '2026-07-21'
+method: generated
+source: https://docs.stairwell.com/reference
+skills:
+  - file: stairwell-triage-a-file.md
+    name: Triage a suspicious file with Stairwell
+    api: https://app.stairwell.com/v1
+    operations: [GetObjectMetadata, SummarizeFile, TriggerObjectDetonation, GetObjectDetonation, ListObjectSightings, ListObjectVariants, CreateObjectOpinion]
+  - file: stairwell-ioc-sweep.md
+    name: Sweep your environment for newly disclosed IOCs
+    api: https://app.stairwell.com/v1
+    operations: [CreateThreatReport, ListThreatReportIocs, QueryThreatReportsMatchingIOCs, ListThreatReportMatches, GenerateRunToGround, ListObjectMetadata]
+  - file: stairwell-yara-hunt.md
+    name: Hunt the historical corpus with a YARA rule
+    api: https://app.stairwell.com/v1
+    operations: [ScanYaraRule, CreateYaraRule, QueryYaraRuleMatches, ListYaraRules, UpdateYaraRule, DeleteYaraRule]

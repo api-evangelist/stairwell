@@ -1,0 +1,36 @@
+generated: '2026-07-21'
+method: searched
+source: live probes of /.well-known/* on Stairwell hosts
+hosts:
+  - host: https://app.stairwell.com
+    documents:
+      - path: /.well-known/security.txt
+        status: 302   # redirects to /login (authenticated app; no public security.txt)
+      - path: /.well-known/openid-configuration
+        status: 302
+      - path: /.well-known/oauth-authorization-server
+        status: 302
+      - path: /.well-known/api-catalog
+        status: 302
+      - path: /.well-known/ai-plugin.json
+        status: 302
+  - host: https://www.stairwell.com
+    documents:
+      - path: /.well-known/security.txt
+        status: 404
+      - path: /.well-known/openid-configuration
+        status: 404
+      - path: /.well-known/api-catalog
+        status: 404
+  - host: https://docs.stairwell.com
+    documents:
+      - path: /.well-known/security.txt
+        status: 404
+      - path: /.well-known/openid-configuration
+        status: 404
+notes: >-
+  No public .well-known discovery documents are published. app.stairwell.com is
+  an authenticated single-page app that 302-redirects every /.well-known/* path
+  to /login; the marketing and docs hosts return 404. Absence recorded as valid
+  data. The agent-facing discovery surface Stairwell does publish is
+  https://docs.stairwell.com/llms.txt (see llms/).

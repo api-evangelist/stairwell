@@ -1,0 +1,29 @@
+generated: '2026-07-21'
+method: searched
+status: published
+source: https://docs.stairwell.com/docs/mcp-server.md
+server:
+  name: stairwell-mcp
+  transport: http
+  url: https://mcp.api.stairwell.com/mcp
+  authentication:
+    type: bearer
+    header: Authorization
+    format: 'Bearer $STAIRWELL_AUTH_TOKEN'
+    env: STAIRWELL_AUTH_TOKEN
+  access: read-only   # server is only allowed to query data, not modify it
+notes: >-
+  Official hosted Model Context Protocol server for the Stairwell threat-intelligence
+  platform. Exposes read-only access to data available through the Stairwell public
+  API (query only; create/modify/delete operations are not supported). Installed into
+  MCP-capable clients (e.g. Claude Code) via `claude mcp add stairwell-mcp -t http
+  https://mcp.api.stairwell.com/mcp -H "Authorization: Bearer $STAIRWELL_AUTH_TOKEN"`.
+  In-client, tools are invoked with the `/stairwell` prefix.
+tools_reference: >-
+  The docs do not publish an explicit per-tool manifest; tools mirror the read
+  operations of the public API (list environments/assets, object & network
+  intelligence lookups, YARA/threat-report queries). See mcp/ candidate mapping
+  and the API reference at https://docs.stairwell.com/reference.
+example_prompt: >-
+  "List me all my active environments, and how many assets are running Windows
+  vs macOS in each."

@@ -1,0 +1,13 @@
+generated: '2026-07-21'
+method: searched
+probe: true
+url: https://trust.stairwell.com/
+certifications: []
+evidence:
+  - source: https://trust.stairwell.com/
+    kind: trust-center-page
+    note: >-
+      A Stairwell Trust Center page exists and resolves (title "Stairwell Trust
+      Center"). Specific named certifications (SOC 2, ISO 27001, etc.) are
+      rendered client-side and could not be machine-verified, so none are
+      asserted here. No Compliance pointer emitted without verifiable certs.
