@@ -1,0 +1,45 @@
+generated: '2026-10-14'
+method: searched
+checked:
+- palo-alto-networks/integrations/palo-alto-networks-integration-edges.yml
+- splunk/integrations/splunk-integration-edges.yml
+source:
+- palo-alto-networks/integrations/palo-alto-networks-integration-edges.yml
+- splunk/integrations/splunk-integration-edges.yml
+edges:
+- partner_name: Palo Alto Networks (own)
+  partner: palo-alto-networks
+  partner_match: mirror
+  mirror_match: domain
+  type: marketplace
+  relationship: platform-app
+  direction: third-party
+  channel: partner-built
+  marketplace: own
+  evidence: https://cortex.marketplace.pan.dev/marketplace/details/Stairwell/
+  mirror_of: palo-alto-networks/integrations/palo-alto-networks-integration-edges.yml
+  apps:
+  - Stairwell
+  listing_count: 1
+  detected: '2026-10-14'
+  detected_by: mirror-platform-listings.py
+  category: Data Enrichment & Threat Intelligence
+  badges:
+  - support:partner
+- partner_name: Splunk (own)
+  partner: splunk
+  partner_match: mirror
+  mirror_match: domain
+  type: marketplace
+  relationship: platform-app
+  direction: third-party
+  channel: partner-built
+  marketplace: own
+  evidence: https://splunkbase.splunk.com/app/7788/
+  mirror_of: splunk/integrations/splunk-integration-edges.yml
+  apps:
+  - Stairwell App for Splunk
+  listing_count: 1
+  detected: '2026-10-14'
+  detected_by: mirror-platform-listings.py
+  category: app
