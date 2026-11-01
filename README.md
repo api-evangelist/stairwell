@@ -64,6 +64,107 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Stairwell is a company surfaced as a portfolio company of accel and added to the API Evangelist network as a stub for enrichment. Sector: security. This profile is a lead awaiting the enrichment pipeline.
+Stairwell is a private-by-design threat intelligence and detection platform that gives security teams a continuously reanalyzed, isolated store of their own files as an alternative to crowdsourced public services like VirusTotal. Its products span AI triage and static/behavioral malware analysis, malware variant discovery, Run-to-Ground incident scoping, and an encrypted Private Vault with retroactive detection as threat intelligence evolves. Stairwell exposes a REST API at app.stairwell.com/v1 (bearer-token auth) covering assets and forwarders, objects and detonation, sightings and variants, YARA rule management and ad-hoc scanning, threat reports and IOC correlation, network intelligence (hostname/IP/ASN WHOIS, cloud-provider lookups), plus outbound event-notification webhooks and an official hosted MCP server for read-only agent access. Added to the API Evangelist network from Accel's portfolio and enriched from Stairwell's public developer surface.
 
-Backed by: accel — https://www.stairwell.com/
+**Areas:** Company · Security · Threat Intelligence · Malware Analysis · Cybersecurity · Threat Detection · YARA · Incident Response
+
+## Stairwell on APIs.io
+
+Everything profiled for Stairwell is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/stairwell/](https://apis.io/providers/stairwell/)** — or go straight to one of the APIs or properties below.
+
+### APIs (1)
+
+- [Stairwell API](https://apis.io/apis/stairwell/stairwell-api/) — REST API for the Stairwell threat-intelligence platform: manage assets and forwarders, query object metadata/detonation/sightings/variants, manage and scan…
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### AsyncAPI (1)
+
+Event-driven and webhook contracts.
+
+- [Stairwell Events Webhooks](https://apis.io/asyncapis/stairwell/stairwell-events-webhooks/)
+
+#### MCP servers (1)
+
+Model Context Protocol servers that expose the API to agents.
+
+- [stairwell-mcp](https://apis.io/servers/stairwell/stairwell-mcp/)
+
+#### Security (3)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Stairwell Authentication](https://apis.io/security/stairwell/stairwell-authentication/)
+- [Stairwell Domain Security](https://apis.io/security/stairwell/stairwell-domain-security/)
+- [Stairwell Trust Center](https://apis.io/security/stairwell/stairwell-trust-center/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://www.stairwell.com/)
+- [Documentation](https://docs.stairwell.com/)
+- [Getting started](https://docs.stairwell.com/docs/api-quickstart)
+- [API reference](https://docs.stairwell.com/reference)
+- [Support](https://docs.stairwell.com/docs/who-to-contact)
+- [Blog](https://stairwell.com/blog/)
+- [Trust centre](https://trust.stairwell.com/)
+- [Terms of service](https://stairwell.com/website-terms-and-conditions/)
+- [Privacy policy](https://stairwell.com/privacy-policy/)
+
+## API Evangelist rating
+
+**Kin Score 36.0** — thin · rubric 0.25.0 · scored 2026-10-23
+
+| Facet | Score |
+|---|---|
+| Discoverability | 75.0 |
+| Contract quality | 39.0 |
+| Contract governance | 4.5 |
+| Operational transparency | 7.9 |
+| Developer ergonomics | 39.9 |
+| Access clarity | 35.5 |
+
+**Agent readiness 30.0** — agent-ready
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | yes |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | verified |
+| Auth Clarity | bearer (partial credit) |
+| Idempotency | — |
+| Error Semantics | derived (partial credit) |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | yes |
+| Agent Skills | derived (partial credit) |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+| Pagination Ratio | na |
+| Operation Distinctiveness | na |
+
+**Regulatory alignment 29.4** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/stairwell/](https://apis.io/providers/stairwell/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Stairwell: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/stairwell/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
